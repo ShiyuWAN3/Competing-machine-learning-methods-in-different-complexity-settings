@@ -30,6 +30,19 @@ risk.set <- function(t_threshold,times) {
   return(which(times >= t_threshold))
 }
 
+
+
+#' Calculated the Cox-PH's log-likelihood based on event status, event time and risk prediction
+#'
+#' @param Status Patients' event statuses
+#' @param Times Patients' event times
+#' @param f_hat_y X \%*\% Beta
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#'
 loglik_coxph = function(Status,Times,f_hat_y){
   if (length(Status) != length(Times)){
     return("Check your input!")

@@ -2,7 +2,7 @@
 \alias{loglik_coxph}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-loglik_coxph to do ...
+Calculate the log-likelihood of Cox-PH model
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
@@ -12,8 +12,17 @@ loglik_coxph(Status,Times,f_hat_y)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{
+  \item{Status}{
 %%     ~~Describe \code{x} here~~
+  Patients' event statuses
+}
+\item{Times}{
+%%     ~~Describe \code{x} here~~
+  Patients' event times
+}
+\item{f_hat_y}{
+%%     ~~Describe \code{x} here~~
+  X \%*\% beta hat
 }
 }
 \details{

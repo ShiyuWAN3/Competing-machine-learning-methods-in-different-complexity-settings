@@ -12,12 +12,32 @@ mod_permfit(method, model.type, object, ...)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{
+  \item{method}{
 %%     ~~Describe \code{x} here~~
+  Different methods of machine learning
 }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
+Methods implemeted in mod_permfit:
+
+"random_forest": Random Survival Forest;
+
+"survival_aft": accelerated failure model;
+
+"survival_cox": Cox-PH regression;
+
+"DeepSurv": deep learning based DeepSurv;
+
+"DeepHit": deep learning based DeepHit;
+
+"Xgboost": Xgboost with Cox-based loss;
+
+"Survival_SVM": survival support vector machine;
+
+"lasso": Lasso-Cox;
+
+"ensemble_dnnet": proposed SurvDNN
 }
 \value{
 %%  ~Describe the value returned
