@@ -38,7 +38,7 @@ risk.set <- function(t_threshold,times) {
 #' @param Times Patients' event times
 #' @param f_hat_y X \%*\% Beta
 #'
-#' @return
+#' @return Returns the log-likelihood of a Cox-PH Model
 #' @export
 #'
 #' @examples
