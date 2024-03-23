@@ -14,6 +14,18 @@ library(pheatmap)
 
 ##### 0. Args Setting #####
 
+
+#' Cox-PH log-likelihood calculation
+#'
+#' @param t_threshold Calculate the risk set at time t_throshold
+#' @param times Patients' event times
+#'
+#' @return Returns the IDs of patients whose event time is longer then t_threshold
+#' @export
+#'
+#' @examples
+#'
+#'
 risk.set <- function(t_threshold,times) {
   return(which(times >= t_threshold))
 }

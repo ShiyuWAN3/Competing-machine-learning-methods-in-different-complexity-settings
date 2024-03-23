@@ -6,14 +6,24 @@ Cindex function to do ...
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Computes Harrel's C index for predictions from times, statuses and survival risk predictions.
 }
 \usage{
 Cindex(Status,Times,f_hat_y)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{x}{
+  \item{Status}{
 %%     ~~Describe \code{x} here~~
+A numeric vector of patients' survival status: 1 = event and 0 = censor
+}
+  \item{Times}{
+%%     ~~Describe \code{x} here~~
+A numeric vector of patients' survival times
+}
+  \item{f_hat_y}{
+%%     ~~Describe \code{x} here~~
+A numeric vector of patients' survival risk prediction.
 }
 }
 \details{
